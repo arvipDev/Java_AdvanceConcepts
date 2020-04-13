@@ -4,6 +4,7 @@ public class MyLinkedList {
 
     private Node first;
 
+
     public MyLinkedList () {
         this.first = null;
     }
