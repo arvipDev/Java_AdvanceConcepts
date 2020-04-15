@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d83dd908-348e-4e87-afc1-76cedb706493" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/datastructure/IConcept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/geeksforgeeks/RobTheHouses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javagenerics/BasketballPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javagenerics/FootballPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javagenerics/HockeyPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javagenerics/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javagenerics/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javagenerics/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/2020_JAVA/javagenerics/League.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/javagenerics/League.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2020_JAVA/datastructure/MyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2020_JAVA/datastructure/MyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2020_JAVA/javagenerics/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2020_JAVA/javagenerics/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2020_JAVA/javagenerics/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2020_JAVA/javagenerics/Team.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javagenerics/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javagenerics/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javagenerics/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javagenerics/Team.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/javagenerics/Player.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -48,25 +44,34 @@
         <entry file="file://$PROJECT_DIR$/src/javagenerics/HockeyPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/javagenerics/Team.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="53" column="96" selection-start-line="53" selection-start-column="96" selection-end-line="53" selection-end-column="96" />
+              <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/javagenerics/Team.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/javagenerics/League.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/javagenerics/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="67" lean-forward="true" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+            <state relative-caret-position="243">
+              <caret line="53" column="40" lean-forward="true" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -75,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/src/javagenerics/FootballPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -112,6 +117,7 @@
         <option value="$PROJECT_DIR$/src/javagenerics/FootballPlayer.java" />
         <option value="$PROJECT_DIR$/src/javagenerics/HockeyPlayer.java" />
         <option value="$PROJECT_DIR$/src/javagenerics/BasketballPlayer.java" />
+        <option value="$PROJECT_DIR$/src/javagenerics/League.java" />
         <option value="$PROJECT_DIR$/src/javagenerics/Main.java" />
         <option value="$PROJECT_DIR$/src/javagenerics/Team.java" />
       </list>
@@ -136,17 +142,6 @@
               <item name="2020_JAVA" type="b2602c69:ProjectViewProjectNode" />
               <item name="2020_JAVA" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="2020_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2020_JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="2020_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2020_JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="javagenerics" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -156,7 +151,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586969802900" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586972213245" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Threads" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -248,12 +243,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586799175452</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Java Generics example">
+      <created>1586969862133</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586969862133</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27609682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -264,14 +265,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -287,7 +288,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+    <MESSAGE value="Java Generics example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java Generics example" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/package-info.java" />
@@ -336,7 +338,7 @@
     <entry file="file://$PROJECT_DIR$/src/javagenerics/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -350,28 +352,35 @@
     <entry file="file://$PROJECT_DIR$/src/javagenerics/HockeyPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/javagenerics/FootballPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/javagenerics/Team.java">
+    <entry file="file://$PROJECT_DIR$/src/javagenerics/League.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="53" column="96" selection-start-line="53" selection-start-column="96" selection-end-line="53" selection-end-column="96" />
+        <state relative-caret-position="272">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/javagenerics/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="67" lean-forward="true" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+        <state relative-caret-position="243">
+          <caret line="53" column="40" lean-forward="true" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javagenerics/Team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
         </state>
       </provider>
     </entry>

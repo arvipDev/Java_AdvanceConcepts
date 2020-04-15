@@ -10,7 +10,6 @@ public class Team <T extends Player> implements Comparable<Team<T>> {
     private int loss = 0;
     private int won = 0;
     private int draw = 0;
-    private int totalPoints = 0;
 
     public Team(String teamName) {
         this.teamName = teamName;
@@ -51,14 +50,14 @@ public class Team <T extends Player> implements Comparable<Team<T>> {
         int temp;
         if (this.ranking() > team.ranking()){
             temp = this.ranking() - team.ranking();
-            System.out.println(this.teamName + " leads " + team.getTeamName() + " by " + temp );
+            //System.out.println(this.teamName + " leads " + team.getTeamName() + " by " + temp );
             return -1;
         } else if (this.ranking() < team.ranking()){
             temp = team.ranking() - this.ranking();
-            System.out.println(this.teamName + " trails " + team.getTeamName() + " by " + temp );
+            //System.out.println(this.teamName + " trails " + team.getTeamName() + " by " + temp );
             return 1;
         } else
-            System.out.println("both teams rank the same " + team.ranking());
+            //System.out.println("both teams rank the same " + team.ranking());
         return 0;
     }
 

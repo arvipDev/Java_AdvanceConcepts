@@ -36,6 +36,20 @@ public class Main {
         Team<FootballPlayer> team3 = new Team<>("Liverpool FC");
         team.matchResult(team3, 5, 8);
         System.out.println(team.compareTo(team3));
+        System.out.println("------------------------------------------------------------------------");
+        Team<FootballPlayer> team4 = new Team<>("Chelsea FC");
+        team4.matchResult(team3, 3, 2);
+        Team<FootballPlayer> team5 = new Team<>("New Castle United FC");
+        team5.matchResult(team, 1, 0);
+        team.matchResult(team5, 1, 1);
+        System.out.println("------------------------------------------------------------------------");
+        League<Team<FootballPlayer>> league = new League<>("Indian Premier League");
+        league.addTeams(team);
+        league.addTeams(team3);
+        league.addTeams(team4);
+        league.addTeams(team5);
+        System.out.println("------------------------------------------------------------------------");
+        league.showTable();
 
         //team.matchResult(team2, 5, 8);
 
