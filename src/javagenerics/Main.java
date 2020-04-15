@@ -51,6 +51,14 @@ public class Main {
         System.out.println(league.getLeagueName());
         System.out.println("------------------------------------------------------------------------");
         league.showTable();
+        System.out.println("------------------------------------------------------------------------");
+        // Generic method example
+        OtherLeague newLeague = new OtherLeague();
+        newLeague.getPlayerNames(team);
+        System.out.println("------------------------------------------------------------------------");
+        // Multiple generics with inner class example.
+        OtherLeague.Think<String, Integer> think = newLeague.new Think<>("Arvind", 29);
+        think.print();
 
         //team.matchResult(team2, 5, 8);
 

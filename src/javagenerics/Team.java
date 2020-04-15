@@ -62,4 +62,14 @@ public class Team <T extends Player> implements Comparable<Team<T>> {
     String getTeamName () {
         return this.teamName;
     }
+
+    List<T> getTeamMembers() {
+        return teamMembers;
+    }
+
+    void getTeamMemberNames () {
+        for (Player player: teamMembers) {
+            System.out.println("Name " + player.getName());
+        }
+    }
 }
