@@ -4,16 +4,20 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class League <T extends  Team> {
+class League <T extends  Team> {
 
     private String leagueName;
     private List<T> leagueTeams = new ArrayList<>();
 
-    public League(String leagueName) {
+    League(String leagueName) {
         this.leagueName = leagueName;
     }
 
-    public void addTeams (T team) {
+    String getLeagueName() {
+        return leagueName;
+    }
+
+    void addTeams (T team) {
         if(leagueTeams.contains(team)){
             System.out.println("Team is already part of the league");
         } else {
@@ -22,7 +26,7 @@ public class League <T extends  Team> {
         }
     }
 
-    public void showTable () {
+    void showTable () {
         Collections.sort(leagueTeams);
         for (T team: leagueTeams ) {
             System.out.println(team.getTeamName() + ": " + team.ranking());
