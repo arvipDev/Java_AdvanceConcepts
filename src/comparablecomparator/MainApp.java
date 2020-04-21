@@ -51,7 +51,7 @@ public class MainApp {
         professors.add(new Professor("Soon", 2, 99));
         professors.add(new Professor("Chung", 4, 129));
         printProf(professors);
-        List<Professor> newProf = new LinkedList<>();
+        List<Professor> newProf = new ArrayList<>();
         newProf.addAll(professors);
         System.out.println("New Professors ----------------------------------------------");
         printProf(newProf);
