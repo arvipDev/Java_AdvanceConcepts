@@ -59,7 +59,6 @@ public class Main {
         // Multiple generics with inner class example.
         OtherLeague.Think<String, Integer> think = newLeague.new Think<>("Arvind", 29);
         think.print();
-
         //team.matchResult(team2, 5, 8);
 
     }
