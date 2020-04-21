@@ -26,6 +26,10 @@ public class MainApp {
         System.out.println("Sorting by student name using Comparator ----------------------");
         Collections.sort(studentList, new NameCompare());
         printList(studentList);
+        System.out.println("Reverse the list ----------------------------------------------");
+        Collections.reverse(studentList);
+        printList(studentList);
+
     }
 
     private static void printList(List<Student> students) {

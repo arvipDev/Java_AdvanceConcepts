@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d83dd908-348e-4e87-afc1-76cedb706493" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/comparablecomparator/MainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/comparablecomparator/NameCompare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/comparablecomparator/RollCompare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/comparablecomparator/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javacollections/Cample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2020_JAVA/javagenerics/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2020_JAVA/javagenerics/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javagenerics/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javagenerics/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/comparablecomparator/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/comparablecomparator/MainApp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/comparablecomparator/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <state relative-caret-position="238">
+              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -35,8 +29,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/comparablecomparator/RollCompare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="340">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/comparablecomparator/MainApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="25" column="94" lean-forward="true" selection-start-line="25" selection-start-column="94" selection-end-line="25" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -87,11 +90,11 @@
         <option value="$PROJECT_DIR$/src/javagenerics/OtherLeague.java" />
         <option value="$PROJECT_DIR$/src/javagenerics/Main.java" />
         <option value="$PROJECT_DIR$/src/javacollections/Cample.java" />
-        <option value="$PROJECT_DIR$/src/comparablecomparator/MainApp.java" />
         <option value="$PROJECT_DIR$/src/comparablecomparator/NameCopare.java" />
         <option value="$PROJECT_DIR$/src/comparablecomparator/NameCompare.java" />
         <option value="$PROJECT_DIR$/src/comparablecomparator/RollCompare.java" />
         <option value="$PROJECT_DIR$/src/comparablecomparator/Student.java" />
+        <option value="$PROJECT_DIR$/src/comparablecomparator/MainApp.java" />
       </list>
     </option>
   </component>
@@ -134,7 +137,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587450601249" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587451644809" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Threads" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -296,14 +299,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586976843128</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Comparable&lt;&gt; and Comparator&lt;&gt; Interface implementation on an object that forms a list of objects. Using Collections.sort(-) and Collections.sort(-, -) to sort the list.">
+      <created>1587450854734</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587450854734</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28517398" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28517398" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -312,7 +322,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -340,7 +350,8 @@
     <MESSAGE value="Java Generics example - League added with changes (Collections.sort())" />
     <MESSAGE value="Java Generics example - League added with changes (Collections.sort())2" />
     <MESSAGE value="Generic method, multiple generics and inner classes concept added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Generic method, multiple generics and inner classes concept added." />
+    <MESSAGE value="Comparable&lt;&gt; and Comparator&lt;&gt; Interface implementation on an object that forms a list of objects. Using Collections.sort(-) and Collections.sort(-, -) to sort the list." />
+    <option name="LAST_COMMIT_MESSAGE" value="Comparable&lt;&gt; and Comparator&lt;&gt; Interface implementation on an object that forms a list of objects. Using Collections.sort(-) and Collections.sort(-, -) to sort the list." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/package-info.java" />
@@ -456,24 +467,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/comparablecomparator/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/comparablecomparator/RollCompare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="340">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/comparablecomparator/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/comparablecomparator/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="195">
+          <caret line="25" column="94" lean-forward="true" selection-start-line="25" selection-start-column="94" selection-end-line="25" selection-end-column="94" />
         </state>
       </provider>
     </entry>
