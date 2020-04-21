@@ -1,12 +1,13 @@
 package comparablecomparator;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class MainApp {
 
+    private static List<Student> studentList = new ArrayList<>();
+
     public static void main(String[] args) {
+
         List<Student> studentList = new ArrayList<>();
         studentList.add(new Student("Arvind", 7, 21));
         studentList.add(new Student("Sneha", 16, 1));
@@ -30,11 +31,35 @@ public class MainApp {
         Collections.reverse(studentList);
         printList(studentList);
 
+        System.out.println("Professors list ----------------------------------------------");
+        linkedList();
+
     }
 
     private static void printList(List<Student> students) {
         for (Student student : students) {
             System.out.println(student.getName() + " " + student.getRollNo() + " " + student.getRank());
+        }
+    }
+
+    private static void linkedList () {
+        List<Professor> professors = new LinkedList<>();
+        professors.add(new Professor("Jack", 156, 1));
+        professors.add(new Professor("Jean", 89, 4));
+        professors.add(new Professor("Martin", 249, 7));
+        professors.add(new Professor("Rozki", 23, 2));
+        professors.add(new Professor("Soon", 2, 99));
+        professors.add(new Professor("Chung", 4, 129));
+        printProf(professors);
+        List<Professor> newProf = new LinkedList<>();
+        newProf.addAll(professors);
+        System.out.println("New Professors ----------------------------------------------");
+        printProf(newProf);
+    }
+
+    private static void printProf (List<Professor> professors) {
+        for (Professor professor : professors) {
+            System.out.println(professor.getName() + " " + professor.getId() + " " + professor.getRank());
         }
     }
 }
