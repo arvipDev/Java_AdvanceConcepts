@@ -47,12 +47,8 @@ public class Team <T extends Player> implements Comparable<Team<T>> {
     public int compareTo(Team<T> team) {
         int temp;
         if (this.ranking() > team.ranking()){
-            temp = this.ranking() - team.ranking();
-            System.out.println(this.teamName + " leads " + team.getTeamName() + " by " + temp );
             return -1;
         } else if (this.ranking() < team.ranking()){
-            temp = team.ranking() - this.ranking();
-            System.out.println(this.teamName + " trails " + team.getTeamName() + " by " + temp );
             return 1;
         } else
             System.out.println("both teams rank the same " + team.ranking());
@@ -61,10 +57,6 @@ public class Team <T extends Player> implements Comparable<Team<T>> {
 
     String getTeamName () {
         return this.teamName;
-    }
-
-    List<T> getTeamMembers() {
-        return teamMembers;
     }
 
     void getTeamMemberNames () {

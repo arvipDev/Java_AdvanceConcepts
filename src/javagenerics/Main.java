@@ -48,6 +48,7 @@ public class Main {
         league.addTeams(team3);
         league.addTeams(team4);
         league.addTeams(team5);
+        //league.addTeams(team2);
         System.out.println(league.getLeagueName());
         System.out.println("------------------------------------------------------------------------");
         league.showTable();
