@@ -2,10 +2,10 @@ package javacollections;
 
 import java.util.*;
 
-public class Agency {
+public class HashMapNSet {
 
     private static Map<Driver, Car> agency = new HashMap<>();
-    private static List<Driver> sort = new ArrayList<>();
+    private static List<Driver> sortedList = new ArrayList<>();
 
     private static Map<Driver, Car> addBucket (String name, int exp, String make, int year) {
         Car car = new Car(make, year);
@@ -19,19 +19,18 @@ public class Agency {
         Driver driver;
         while (iterator.hasNext()){
             driver = iterator.next();
-            sort.add(driver);
+            sortedList.add(driver);
             System.out.println("Driver: " + driver.getName() + ", Car: " + agency.get(driver).getName());
         }
     }
 
     private static void sortMap () {
-        sort.addAll(agency.keySet());
-        Collections.sort(sort);
-        int size = agency.size();
+        sortedList.addAll(agency.keySet());
+        Collections.sort(sortedList);
         Map<Driver, Car> sortedMap = new LinkedHashMap<>();
 
-        for (int i = 0; i < size; i++){
-            sortedMap.put(sort.get(i), agency.get(sort.get(i)));
+        for (int i = 0; i < agency.size(); i++){
+            sortedMap.put(sortedList.get(i), agency.get(sortedList.get(i)));
         }
 
 /*        for (Driver driver : sortedMap.keySet()) {

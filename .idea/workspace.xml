@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d83dd908-348e-4e87-afc1-76cedb706493" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/javacollections/Agency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javacollections/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javacollections/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/javacollections/SetFunctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2020_JAVA/javagenerics/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2020_JAVA/javagenerics/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2020_JAVA/javagenerics/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2020_JAVA/javagenerics/Team.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javagenerics/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javagenerics/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javagenerics/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javagenerics/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javacollections/Agency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacollections/HashMapNSet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,28 +19,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/javacollections/Driver.java">
+        <entry file="file://$PROJECT_DIR$/src/javacollections/HashMapNSet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/javacollections/Car.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            <state relative-caret-position="272">
+              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/javacollections/Agency.java">
+        <entry file="file://$PROJECT_DIR$/src/javacollections/SetFunctions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+            <state relative-caret-position="221">
+              <caret line="25" column="68" lean-forward="true" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -100,6 +86,8 @@
         <option value="$PROJECT_DIR$/src/javacollections/Driver.java" />
         <option value="$PROJECT_DIR$/src/javacollections/Car.java" />
         <option value="$PROJECT_DIR$/src/javacollections/Agency.java" />
+        <option value="$PROJECT_DIR$/src/javacollections/HashMapNSet.java" />
+        <option value="$PROJECT_DIR$/src/javacollections/SetFunctions.java" />
       </list>
     </option>
   </component>
@@ -115,7 +103,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,10 +126,11 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587549896676" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587622089721" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Threads" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -161,9 +149,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Agency">
-    <configuration name="Agency" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacollections.Agency" />
+  <component name="RunManager" selected="Application.SetFunctions">
+    <configuration name="HashMapNSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacollections.HashMapNSet" />
       <module name="2020_JAVA" />
       <extension name="coverage">
         <pattern>
@@ -214,20 +202,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRandom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestRandom" />
+    <configuration name="SetFunctions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javacollections.SetFunctions" />
       <module name="2020_JAVA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javacollections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Agency" />
+        <item itemvalue="Application.SetFunctions" />
+        <item itemvalue="Application.HashMapNSet" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Sample" />
         <item itemvalue="Application.MainApp" />
-        <item itemvalue="Application.TestRandom" />
       </list>
     </recent_temporary>
   </component>
@@ -333,14 +327,28 @@
       <option name="project" value="LOCAL" />
       <updated>1587477244705</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="HashMap and Sets, sorting HashMap using linkedList. Iterating through HashMap using Map.Entry&lt;&gt;. Immutable classes example.">
+      <created>1587549972526</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1587549972526</updated>
+    </task>
+    <task id="LOCAL-00015" summary="HashMap and Sets, sorting HashMap using linkedList. Iterating through HashMap using Map.Entry&lt;&gt;. Immutable classes example.2">
+      <created>1587549996131</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1587549996131</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31694403" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3267776" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -382,7 +390,9 @@
     <MESSAGE value="Checing char, int and string format functions" />
     <MESSAGE value="LinkedList" />
     <MESSAGE value="HashMaps" />
-    <option name="LAST_COMMIT_MESSAGE" value="HashMaps" />
+    <MESSAGE value="HashMap and Sets, sorting HashMap using linkedList. Iterating through HashMap using Map.Entry&lt;&gt;. Immutable classes example." />
+    <MESSAGE value="HashMap and Sets, sorting HashMap using linkedList. Iterating through HashMap using Map.Entry&lt;&gt;. Immutable classes example.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="HashMap and Sets, sorting HashMap using linkedList. Iterating through HashMap using Map.Entry&lt;&gt;. Immutable classes example.2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/package-info.java" />
@@ -534,13 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/javacollections/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/javacollections/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -548,10 +551,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/javacollections/Agency.java">
+    <entry file="file://$PROJECT_DIR$/src/javacollections/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+        <state relative-caret-position="153">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javacollections/HashMapNSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javacollections/SetFunctions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="25" column="68" lean-forward="true" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
         </state>
       </provider>
     </entry>
