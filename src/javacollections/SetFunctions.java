@@ -31,6 +31,17 @@ public class SetFunctions {
         symDifference.removeAll(setThree);
         System.out.println("Symmetric Difference of sets: " + symDifference);
 
+        Set<Integer> asymDifference = new HashSet<>(symDifference);
+        Set<Integer> rhs = new HashSet<>(setThree);
+        rhs.removeAll(setOne);
+        asymDifference.addAll(rhs);
+        System.out.println("Asymmetric Difference of set one and set two: " + asymDifference);
+
+        union.removeAll(intersection);
+        System.out.println("Asymmetric Difference of all 3 sets: " + union);
+
+
+
 
     }
 }

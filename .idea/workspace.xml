@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d83dd908-348e-4e87-afc1-76cedb706493" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/javacollections/SetFunctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javacollections/Agency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacollections/HashMapNSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2020_JAVA/datastructure/IConcept.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2020_JAVA/datastructure/MainProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2020_JAVA/datastructure/MyLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/2020_JAVA/datastructure/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/IConcept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customdatastructure/IConcept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/MainProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customdatastructure/MainProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customdatastructure/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/customdatastructure/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javacollections/SetFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javacollections/SetFunctions.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/javacollections/SetFunctions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="25" column="68" lean-forward="true" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+            <state relative-caret-position="141">
+              <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -130,7 +137,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587622089721" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587625652850" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Threads" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -341,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587549996131</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Union, Intersection and Symmetric Difference of sets using Set">
+      <created>1587622146072</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1587622146072</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -392,7 +406,8 @@
     <MESSAGE value="HashMaps" />
     <MESSAGE value="HashMap and Sets, sorting HashMap using linkedList. Iterating through HashMap using Map.Entry&lt;&gt;. Immutable classes example." />
     <MESSAGE value="HashMap and Sets, sorting HashMap using linkedList. Iterating through HashMap using Map.Entry&lt;&gt;. Immutable classes example.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="HashMap and Sets, sorting HashMap using linkedList. Iterating through HashMap using Map.Entry&lt;&gt;. Immutable classes example.2" />
+    <MESSAGE value="Union, Intersection and Symmetric Difference of sets using Set" />
+    <option name="LAST_COMMIT_MESSAGE" value="Union, Intersection and Symmetric Difference of sets using Set" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/package-info.java" />
@@ -403,14 +418,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructure/Node.java">
+    <entry file="file://$PROJECT_DIR$/src/customdatastructure/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructure/MyLinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/customdatastructure/MyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
@@ -424,7 +439,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructure/MainProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/customdatastructure/MainProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
@@ -537,7 +552,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructure/IConcept.java">
+    <entry file="file://$PROJECT_DIR$/src/customdatastructure/IConcept.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
@@ -567,8 +582,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/javacollections/SetFunctions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="25" column="68" lean-forward="true" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+        <state relative-caret-position="141">
+          <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
         </state>
       </provider>
     </entry>
