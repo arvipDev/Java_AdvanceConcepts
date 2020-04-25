@@ -10,10 +10,12 @@ public class FileWR {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        fileWriter();
+/*        fileWriter();
         fileReader();
         bufferedWrite();
-        bufferedReader();
+        bufferedReader();*/
+        inputStreamWriter();
+        inputStreamReader();
 
     }
 
@@ -84,8 +86,38 @@ public class FileWR {
                 ch = reader.read();
             }
             System.out.println(data);
+            reader.close();
         } catch (IOException e){
             System.out.println(e.getMessage());
+        }
+    }
+
+    private static void inputStreamWriter() {
+        System.out.println("Enter Name");
+        String name = scanner.nextLine();
+        System.out.println("Enter Age");
+        int age = Integer.valueOf(scanner.nextLine());
+        Data data = new Data(age, name);
+        try{
+            FileOutputStream put = new FileOutputStream(file);
+            ObjectOutputStream writer = new ObjectOutputStream(put);
+            writer.writeObject(data);
+            writer.close();
+        }catch (IOException e){
+            System.out.println(e.getMessage());
+        }
+    }
+
+    private static void inputStreamReader() {
+        try {
+            FileInputStream get = new FileInputStream(file);
+            ObjectInputStream reader = new ObjectInputStream(get);
+            Data data = (Data) reader.readObject();
+            System.out.println(data.getName() + " - " + data.getAge() );
+        } catch (IOException e){
+            System.out.println(e.getMessage());
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
     }
 }
