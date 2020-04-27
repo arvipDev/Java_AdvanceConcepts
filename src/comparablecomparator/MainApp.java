@@ -22,10 +22,10 @@ public class MainApp {
         System.out.println("After sorting -------------------------------------------------");
         printList(studentList);
         System.out.println("Sorting by roll numbers using Comparator ----------------------");
-        Collections.sort(studentList, new RollCompare());
+        Collections.sort(studentList, new CompareRoll());
         printList(studentList);
         System.out.println("Sorting by student name using Comparator ----------------------");
-        Collections.sort(studentList, new NameCompare());
+        Collections.sort(studentList, new CompareName());
         printList(studentList);
         System.out.println("Reverse the list ----------------------------------------------");
         Collections.reverse(studentList);

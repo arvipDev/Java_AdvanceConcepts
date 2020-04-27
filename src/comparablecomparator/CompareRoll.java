@@ -2,7 +2,7 @@ package comparablecomparator;
 
 import java.util.Comparator;
 
-public class RollCompare implements Comparator<Student> {
+public class CompareRoll implements Comparator<Student> {
 
     @Override
     public int compare(Student studentOne, Student studentTwo) {
