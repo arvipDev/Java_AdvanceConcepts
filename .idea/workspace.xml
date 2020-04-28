@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d83dd908-348e-4e87-afc1-76cedb706493" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/javalambdas/FunctionExmaple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javalambdas/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javalambdas/PredicateExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javalambdas/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/javalambdas/ConsumerExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/javalambdas/StreamExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2020_JAVA/comparablecomparator/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/2020_JAVA/comparablecomparator/MainApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2020_JAVA/comparablecomparator/NameCompare.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/2020_JAVA/comparablecomparator/RollCompare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javalambdas/FunctionExmaple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javalambdas/FunctionExmaple.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,17 +40,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/javalambdas/PredicateExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="161">
+              <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/javalambdas/FunctionExmaple.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/javalambdas/ConsumerExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/javalambdas/FunctionExmaple.java">
+        <entry file="file://$PROJECT_DIR$/src/javalambdas/StreamExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+            <state relative-caret-position="170">
+              <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -129,6 +143,8 @@
         <option value="$PROJECT_DIR$/src/javalambdas/Main.java" />
         <option value="$PROJECT_DIR$/src/javalambdas/PredicateExample.java" />
         <option value="$PROJECT_DIR$/src/javalambdas/FunctionExmaple.java" />
+        <option value="$PROJECT_DIR$/src/javalambdas/ConsumerExample.java" />
+        <option value="$PROJECT_DIR$/src/javalambdas/StreamExample.java" />
       </list>
     </option>
   </component>
@@ -171,7 +187,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588068482796" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588091627995" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Threads" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -190,7 +206,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FunctionExmaple">
+  <component name="RunManager" selected="Application.StreamExample">
+    <configuration name="ConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javalambdas.ConsumerExample" />
+      <module name="2020_JAVA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javalambdas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FileWR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="writerreader.FileWR" />
       <module name="2020_JAVA" />
@@ -230,12 +259,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetFunctions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javacollections.SetFunctions" />
+    <configuration name="StreamExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javalambdas.StreamExample" />
       <module name="2020_JAVA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javacollections.*" />
+          <option name="PATTERN" value="javalambdas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -243,20 +272,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRandom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestRandom" />
-      <module name="2020_JAVA" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StreamExample" />
+        <item itemvalue="Application.ConsumerExample" />
         <item itemvalue="Application.FunctionExmaple" />
         <item itemvalue="Application.PredicateExample" />
         <item itemvalue="Application.FileWR" />
-        <item itemvalue="Application.TestRandom" />
-        <item itemvalue="Application.SetFunctions" />
       </list>
     </recent_temporary>
   </component>
@@ -418,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588011771424</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Lambda expression, Predicate&lt;&gt; and Function&lt;&gt;">
+      <created>1588068593714</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1588068593714</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -474,7 +503,8 @@
     <MESSAGE value="Writer and reader - FileWriter/Reader and BufferedWriter/Reader" />
     <MESSAGE value="Input Stream and Output Stream - ByteStream" />
     <MESSAGE value="structure modification" />
-    <option name="LAST_COMMIT_MESSAGE" value="structure modification" />
+    <MESSAGE value="Lambda expression, Predicate&lt;&gt; and Function&lt;&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lambda expression, Predicate&lt;&gt; and Function&lt;&gt;" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/package-info.java" />
@@ -701,15 +731,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/javalambdas/PredicateExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="161">
+          <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/javalambdas/FunctionExmaple.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        <state relative-caret-position="306">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javalambdas/ConsumerExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javalambdas/StreamExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
         </state>
       </provider>
     </entry>
