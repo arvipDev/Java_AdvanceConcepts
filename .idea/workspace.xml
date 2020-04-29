@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d83dd908-348e-4e87-afc1-76cedb706493" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/javaregex/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/javaregex/CommonExamplesRegex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/javaregex/MatcherRegex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javaregex/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javaregex/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,13 +17,34 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="2020_JAVA" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/javaregex/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="51">
+              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/javaregex/CommonExamplesRegex.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/javaregex/MatcherRegex.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="81" column="85" lean-forward="true" selection-start-line="81" selection-start-column="85" selection-end-line="81" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -40,6 +62,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Running from lambda</find>
+      <find>//</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,7 +122,10 @@
         <option value="$PROJECT_DIR$/src/javalambdas/FunctionExmaple.java" />
         <option value="$PROJECT_DIR$/src/javalambdas/ConsumerExample.java" />
         <option value="$PROJECT_DIR$/src/javalambdas/StreamExample.java" />
+        <option value="$PROJECT_DIR$/src/javaregex/MatcherRegex.java" />
         <option value="$PROJECT_DIR$/src/javaregex/Main.java" />
+        <option value="$PROJECT_DIR$/src/javaregex/USAPhNoRegex.java" />
+        <option value="$PROJECT_DIR$/src/javaregex/CommonExamplesRegex.java" />
       </list>
     </option>
   </component>
@@ -127,16 +153,22 @@
               <item name="2020_JAVA" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="2020_JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2020_JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="javaregex" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588104877664" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588171603554" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Threads" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -155,13 +187,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="ConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javalambdas.ConsumerExample" />
+  <component name="RunManager" selected="Application.CommonExamplesRegex">
+    <configuration name="CommonExamplesRegex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaregex.CommonExamplesRegex" />
       <module name="2020_JAVA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javalambdas.*" />
+          <option name="PATTERN" value="javaregex.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,8 +201,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionExmaple" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javalambdas.FunctionExmaple" />
+    <configuration name="ConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javalambdas.ConsumerExample" />
       <module name="2020_JAVA" />
       <extension name="coverage">
         <pattern>
@@ -195,12 +227,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PredicateExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javalambdas.PredicateExample" />
+    <configuration name="MatcherRegex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaregex.MatcherRegex" />
       <module name="2020_JAVA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javalambdas.*" />
+          <option name="PATTERN" value="javaregex.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -223,11 +255,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CommonExamplesRegex" />
+        <item itemvalue="Application.MatcherRegex" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.StreamExample" />
         <item itemvalue="Application.ConsumerExample" />
-        <item itemvalue="Application.FunctionExmaple" />
-        <item itemvalue="Application.PredicateExample" />
       </list>
     </recent_temporary>
   </component>
@@ -403,30 +435,36 @@
       <option name="project" value="LOCAL" />
       <updated>1588091811717</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Regular Expressions">
+      <created>1588104906920</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1588104906920</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.1860817" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49686846" visible="true" weight="0.18910742" />
       <window_info id="Structure" order="1" sideWeight="0.502439" side_tool="true" weight="0.33736762" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.5031315" side_tool="true" weight="0.18910742" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21603929" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -461,7 +499,8 @@
     <MESSAGE value="structure modification" />
     <MESSAGE value="Lambda expression, Predicate&lt;&gt; and Function&lt;&gt;" />
     <MESSAGE value="Lambda expressions - Predicate, Function, Consumer, Supplier&#10;Stream - .stream() .map(Function) .filter(Predicate) .sorted(nothing/Comparator object) .forEach(Consumer)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lambda expressions - Predicate, Function, Consumer, Supplier&#10;Stream - .stream() .map(Function) .filter(Predicate) .sorted(nothing/Comparator object) .forEach(Consumer)" />
+    <MESSAGE value="Regular Expressions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Regular Expressions" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/package-info.java" />
@@ -716,8 +755,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/javaregex/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="51">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/regex/Matcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="535" selection-start-line="535" selection-end-line="535" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javaregex/MatcherRegex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="81" column="85" lean-forward="true" selection-start-line="81" selection-start-column="85" selection-end-line="81" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javaregex/CommonExamplesRegex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
         </state>
       </provider>
     </entry>

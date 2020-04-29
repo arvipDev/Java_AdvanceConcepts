@@ -7,6 +7,7 @@ public class Main {
         String someString = "alsdbviabjvoaiwrpovnzs416846971safvabsv57s1f4asb";
         String saneString = "abcdefghijklmnopqrstuvwxyz1234567890";
         String spaceString = "My name is Arvind\tPurushotham. What's your name12345\n";
+        String matcherString = "asbjfkiiiklsddddddldddkkkijjjdhhwgtsdjbbbviom";
 
         System.out.println("Boundary matcher carrot: " + saneString.replaceAll("^abc", "X"));
         System.out.println("Boundary matcher dollar: " + saneString.replaceAll("890$", "X"));
@@ -28,6 +29,15 @@ public class Main {
                 .replaceAll("\\W", ""));
         System.out.println("Surrounds each word with X: " + spaceString.replaceAll("\\b", "X"));
         System.out.println("Place X between each character of the string: " + spaceString.replaceAll("\\B", "X"));
+        System.out.println("Replace all occurrence of k followed by 3 i: " + matcherString.replaceAll("ki{3}", "X"));
+        System.out.println("Replace all occurrence of k followed by one or more i: " +
+                matcherString.replaceAll("ki+", "X"));
+        System.out.println("Replace all occurrence of k followed by none or any number of i: " +
+                matcherString.replaceAll("ki*", "X"));
+        System.out.println("Replace all occurrence of k followed by 2 to 5 i: " +
+                matcherString.replaceAll("ki{2,5}", "X"));
+        System.out.println("Replace all occurrence of k followed by one or more occurrence of i or none or any occurrence of j: " +
+                matcherString.replaceAll("ki+j*", "X"));
 
     }
 }
