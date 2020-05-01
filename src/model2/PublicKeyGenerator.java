@@ -4,6 +4,7 @@ import java.math.BigInteger;
 import java.util.List;
 
 public class PublicKeyGenerator extends KeyGenerator {
+    //Dummy for now
 
     private static PublicKeyGenerator instance;
 
@@ -19,6 +20,12 @@ public class PublicKeyGenerator extends KeyGenerator {
 
     @Override
     public List<BigInteger> getKeys() {
-        return Sender.getPublicKey();
+        Sender sender = new Sender();
+        List<BigInteger> primes = sender.getPublicKey();
+        System.out.println("App pk " + primes.get(0));
+        System.out.println("App pk " + primes.get(1));
+        return primes;
+                //Sender.getPublicKey();
     }
+
 }

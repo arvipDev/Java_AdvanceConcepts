@@ -17,8 +17,7 @@ public class SecondaryPrimeGenerator {
         while(!isPrime(value)) {
             value = generateRandomNumber();
         }
-        BigInteger smalePrime = new BigInteger(String.valueOf(value));
-        return smalePrime;
+        return new BigInteger(String.valueOf(value));
     }
 
     private boolean isPrime (int value){
