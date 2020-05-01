@@ -5,6 +5,8 @@ import java.util.List;
 
 public class Sender implements Communicator  {
 
+    private List<BigInteger> primes;
+
     public Sender() {
 
         //encryptMessage();
@@ -13,7 +15,7 @@ public class Sender implements Communicator  {
 
     private List<BigInteger> getPrivateKey () {
         KeyGenerator gen = PrivateKeyGenerator.getInstance();
-        List<BigInteger> primes = gen.getKeys();
+        primes = gen.getKeys();
         System.out.println("App " + primes.get(0));
         System.out.println("App " + primes.get(1));
         // p and q are here
