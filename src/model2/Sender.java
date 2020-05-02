@@ -8,25 +8,22 @@ public class Sender implements Communicator  {
 
     private List<BigInteger> primes;
 
-    public Sender() {
-
-        //encryptMessage();
-        //createPacket();
-    }
-
     private List<BigInteger> getPrivateKey () {
         KeyGenerator gen = PrivateKeyGenerator.getInstance();
         primes = gen.getKeys();
-        System.out.println("App " + primes.get(0));
-        System.out.println("App " + primes.get(1));
+        //System.out.println("S private key " + primes.get(0));
+        //System.out.println("S private key " + primes.get(1));
         // p and q are here
-        return primes;
+        List<BigInteger> privateKeys = new ArrayList<>(primes);
+        return privateKeys;
     }
 
     public List<BigInteger> getPublicKey () {
 
         List<BigInteger> publicKeys = getPrivateKey();
-        publicKeys.set(0, publicKeys.get(0).add(publicKeys.get(1)));
+        //System.out.println("S private key - " + primes.get(0));
+        //System.out.println("S private key - " + primes.get(1));
+        publicKeys.set(0, publicKeys.get(0).multiply(publicKeys.get(1)));
         SecondaryPrimeGenerator gen = new SecondaryPrimeGenerator();
         BigInteger secondaryKey = gen.getPrime();
         publicKeys.set(1, secondaryKey);
@@ -34,26 +31,24 @@ public class Sender implements Communicator  {
         return publicKeys;
     }
 
-    private void encryptMessage () {
-        // code to encrypt
-        getPrivateKey();
-        getPublicKey();
-    }
-
-    private void createPacket () {
-        // encrypted message + public keys
+    @Override
+    public List<BigInteger> communicate () {
+        return getPublicKey();
     }
 
     @Override
-    public void communicate () {
-        //createPacket(); if nothing
-    }
-
-    public List<BigInteger> privateEncrypt (List<BigInteger> publicEncryptedMessage) {
-        List<BigInteger> encryptedList = new ArrayList<>();
+    public List<BigInteger> privateCrypt(List<BigInteger> publicEncryptedMessage, List<BigInteger> senderPublicKey) {
+        //List<BigInteger> encryptedList = new ArrayList<>();
         BigInteger one = primes.get(0);
-        one = one.add(primes.get(1));
-        System.out.println("private key added " + one);
-        return encryptedList;
+        one = one.multiply(primes.get(1));
+        //System.out.println("in sender- " + primes.get(0) + " " + primes.get(1));
+        one = one.pow(3);
+        //System.out.println("in sender - " + one);
+        for (int i = 0; i < publicEncryptedMessage.size(); i++){
+            //System.out.println("private key encryption " + publicEncryptedMessage.get(i));
+            publicEncryptedMessage.set(i, publicEncryptedMessage.get(i).add(one));
+            //System.out.println("private key encryption " + publicEncryptedMessage.get(i));
+        }
+        return publicEncryptedMessage;
     }
 }

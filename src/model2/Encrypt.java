@@ -20,25 +20,24 @@ public class Encrypt {
     public List<BigInteger> encrypt(String message, List<BigInteger> receiverPublicKey){ //}, List<BigInteger> myPrivateKey){
         Converter convert = new Converter();
         List<BigInteger> convertedList = convert.stringToNumbers(message);
-        return encryptionProcess(convertedList, receiverPublicKey);
+        return encryption(convertedList, receiverPublicKey);
     }
 
-    private List<BigInteger> encryptionProcess(List<BigInteger> encrypt, List<BigInteger> receiverPublicKey) {
+    private List<BigInteger> encryption(List<BigInteger> encrypt, List<BigInteger> receiverPublicKey) {
         List<BigInteger> encryptedList = new ArrayList<>();
         BigInteger keyOne = receiverPublicKey.get(0);
         BigInteger keyTwo = receiverPublicKey.get(1);
-        System.out.println("keyOne " + keyOne);
-        System.out.println("keyTwo " + keyTwo);
-        long currentNum;
+        //System.out.println("keyOne " + keyOne);
+        //System.out.println("keyTwo " + keyTwo);
         for (BigInteger bigInteger : encrypt) {
             if (bigInteger.intValue() != 0){
-                System.out.println("encrypting " + bigInteger);
+                //System.out.println("encrypting " + bigInteger);
                 encryptedList.add(bigInteger.pow(keyTwo.intValue()));
             }
         }
         for (int i = 0; i < encryptedList.size(); i++) {
             BigInteger bigInteger = encryptedList.get(i);
-            System.out.println("encrypting two " + bigInteger);
+            //System.out.println("encrypting two " + bigInteger);
             encryptedList.set(i, (bigInteger.divide(keyOne)));
         }
         return encryptedList;
