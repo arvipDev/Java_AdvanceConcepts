@@ -1,6 +1,7 @@
 package model2;
 
 import java.math.BigInteger;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Sender implements Communicator  {
@@ -46,5 +47,13 @@ public class Sender implements Communicator  {
     @Override
     public void communicate () {
         //createPacket(); if nothing
+    }
+
+    public List<BigInteger> privateEncrypt (List<BigInteger> publicEncryptedMessage) {
+        List<BigInteger> encryptedList = new ArrayList<>();
+        BigInteger one = primes.get(0);
+        one = one.add(primes.get(1));
+        System.out.println("private key added " + one);
+        return encryptedList;
     }
 }
