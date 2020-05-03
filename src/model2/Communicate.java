@@ -1,6 +1,7 @@
 package model2;
 
 import java.math.BigInteger;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Communicate {
@@ -12,7 +13,6 @@ public class Communicate {
     private Communicator receiver;
 
     private List<BigInteger> encryptedMessage;
-    private static List<BigInteger> staticEncryptedMessage;
 
     public static void main(String[] args) {
 /*        Communicator sender = new Sender();
@@ -45,8 +45,9 @@ public class Communicate {
         sender.privateCrypt(encryptedMessage);*/
 
         Communicate communicate = new Communicate();
-        communicate.sendMessage("Testing coding...");
-        communicate.deletAfterUse(communicate);
+        List<BigInteger> encryptedMess = new ArrayList<>();
+        encryptedMess = communicate.sendMessage("Testing coding...");
+        communicate.receiveMessage(encryptedMess);
 
     }
 
@@ -71,7 +72,10 @@ public class Communicate {
         handShake();
         System.out.println("inside sendMessage ");
         Encrypt encrypt = Encrypt.getInstance();
-        encryptedMessage = encrypt.encrypt(message, receiverPublicKeys);
+        encryptedMessage = encrypt.encrypt(message, receiverPublicKeys); //correct till here
+        System.out.println("test [0] " + encryptedMessage.get(0));
+        System.out.println("receivers public key " + receiverPublicKeys.get(0) + " " + receiverPublicKeys.get(1));
+        System.out.println("senders public key " + senderPublicKeys.get(0) + " " + senderPublicKeys.get(1));
         //System.out.println("here 2 " + encryptedMessage.size());
         encryptedMessage = sender.privateCrypt(encryptedMessage, senderPublicKeys);
         //System.out.println("here 3 " + encryptedMessage.size());
@@ -79,15 +83,17 @@ public class Communicate {
         return encryptedMessage;
     }
 
-    private void deletAfterUse (Communicate communicate) {
-        communicate.receiveMessage(encryptedMessage);
-    }
-
     public void receiveMessage (List<BigInteger> encryptedMessage) {
+        List<BigInteger> decryptMessage = new ArrayList<>();
         System.out.println("senderPublicKey " + senderPublicKeys.get(0) + " " + senderPublicKeys.get(1));
         System.out.println("receiveMessage ");
-        encryptedMessage = receiver.privateCrypt(encryptedMessage, senderPublicKeys);
-        for (BigInteger bigInteger : encryptedMessage) System.out.println(bigInteger);
+        decryptMessage = receiver.privateCrypt(encryptedMessage, senderPublicKeys);
+
+
+
+        //for (BigInteger bigInteger : decryptMessage) System.out.println(bigInteger);
+        //Decrypt decrypt = Decrypt.getInstance();
+        //decrypt.decrypt(decryptMessage, )
     }
 
 }

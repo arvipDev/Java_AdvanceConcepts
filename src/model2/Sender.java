@@ -27,6 +27,8 @@ public class Sender implements Communicator  {
         SecondaryPrimeGenerator gen = new SecondaryPrimeGenerator();
         BigInteger secondaryKey = gen.getPrime();
         publicKeys.set(1, secondaryKey);
+
+        System.out.println("Senders private key " + primes.get(0) + " " + primes.get(1));
         // N and e are here !!!
         return publicKeys;
     }
@@ -38,12 +40,9 @@ public class Sender implements Communicator  {
 
     @Override
     public List<BigInteger> privateCrypt(List<BigInteger> publicEncryptedMessage, List<BigInteger> senderPublicKey) {
-        //List<BigInteger> encryptedList = new ArrayList<>();
         BigInteger one = primes.get(0);
         one = one.multiply(primes.get(1));
-        //System.out.println("in sender- " + primes.get(0) + " " + primes.get(1));
         one = one.pow(3);
-        //System.out.println("in sender - " + one);
         for (int i = 0; i < publicEncryptedMessage.size(); i++){
             //System.out.println("private key encryption " + publicEncryptedMessage.get(i));
             publicEncryptedMessage.set(i, publicEncryptedMessage.get(i).add(one));

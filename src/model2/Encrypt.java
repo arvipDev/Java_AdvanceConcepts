@@ -28,7 +28,7 @@ public class Encrypt {
         BigInteger keyOne = receiverPublicKey.get(0);
         BigInteger keyTwo = receiverPublicKey.get(1);
         //System.out.println("keyOne " + keyOne);
-        //System.out.println("keyTwo " + keyTwo);
+        System.out.println("keyTwo " + keyTwo);
         for (BigInteger bigInteger : encrypt) {
             if (bigInteger.intValue() != 0){
                 //System.out.println("encrypting " + bigInteger);
@@ -38,7 +38,7 @@ public class Encrypt {
         for (int i = 0; i < encryptedList.size(); i++) {
             BigInteger bigInteger = encryptedList.get(i);
             //System.out.println("encrypting two " + bigInteger);
-            encryptedList.set(i, (bigInteger.divide(keyOne)));
+            encryptedList.set(i, (bigInteger.mod(keyOne)));
         }
         return encryptedList;
     }

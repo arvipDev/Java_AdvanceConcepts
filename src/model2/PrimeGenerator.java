@@ -28,7 +28,7 @@ public class PrimeGenerator {
     }
 
     private boolean isPrime (int value){
-        if (value % 2 == 0 || value % 3 == 0 || value < 0)
+        if (value % 2 == 0 || value % 3 == 0)
             return false;
         for (int i = 5; i*i <=value; i++){
             if (value % i == 0 || value % (i+2) == 0)
@@ -39,7 +39,10 @@ public class PrimeGenerator {
 
     private int generateRandomNumber (){
         int value;
-        value = random.nextInt(1000000000);
+        value = random.nextInt(50);
+        while (value < 10){
+            value = random.nextInt(50);
+        }
         return value;
     }
 }

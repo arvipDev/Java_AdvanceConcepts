@@ -6,7 +6,7 @@ import java.util.List;
 public class PrivateKeyGenerator extends KeyGenerator{
 
     // uses keys lambda to implement prime generators
-    // is a singleton that is called in PrivateKey class
+    // is a singleton that is called in KeyGeneratorImpl class
 
     private static PrivateKeyGenerator instance;
 

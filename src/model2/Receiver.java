@@ -41,12 +41,40 @@ public class Receiver implements Communicator {
         BigInteger one = senderPublicKey.get(0);
         //System.out.println("in receiver- " + one);
         one = one.pow(3);
-        //System.out.println("in receiver - " + one);
+        System.out.println("in receiver - " + one);
         for (int i = 0; i < encryptedMessage.size(); i++){
             //System.out.println("private key decryption " + encryptedMessage.get(i));
             encryptedMessage.set(i, encryptedMessage.get(i).subtract(one));
             //System.out.println("private key decryption " + encryptedMessage.get(i));
         }
+        System.out.println("Receivers private key " + primes.get(0) + " " + primes.get(1));
+
+        decryptMessage(encryptedMessage, senderPublicKey);
         return encryptedMessage;
+    }
+
+    private List<BigInteger> decryptMessage(List<BigInteger> encryptedMessage, List<BigInteger> senderPublicKey) {
+        List<BigInteger> encryptedList = new ArrayList<>();
+        BigInteger one = new BigInteger(String.valueOf(1));
+        BigInteger calc1 = primes.get(0).subtract(one);
+        BigInteger calc2 = primes.get(1).subtract(one);
+        calc1 = calc2.multiply(calc1);
+        calc2 = calc1.add(one);
+        one = calc2.divide(senderPublicKey.get(1));
+
+        System.out.println("calc "+ one);
+        System.out.println("p " + primes.get(0) + " q " + primes.get(1));
+        System.out.println("e " + senderPublicKey.get(1));
+        System.out.println("N " + senderPublicKey.get(0));
+
+/*        for (int i = 0; i < encryptedMessage.size(); i++){
+            encryptedList.add(encryptedMessage.get(i).pow(one.intValue()));
+            encryptedList.set(i, encryptedList.get(i).mod(senderPublicKey.get(1)));
+            System.out.println("last second step " + encryptedList.get(i));
+        }*/
+        System.out.println("size of the textList " + encryptedList.size());
+        //BigInteger thirdKey = new BigInteger(());
+
+        return encryptedList;
     }
 }
