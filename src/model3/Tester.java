@@ -20,6 +20,9 @@ public class Tester {
         System.out.println("Testing for P, Q, Phi E and D from KeyGeneratorImpl: ");
         testD();
         System.out.println("Testing for P, Q, Phi E and D from KeyGeneratorImpl: Success ");
+        System.out.println("*****************************************************************************");
+        System.out.println("Testing communicator public key and private key: ");
+        testCommunicator();
     }
 
 
@@ -36,7 +39,7 @@ public class Tester {
         List<BigInteger> pqList = keyGenerator.generateKeys();
         System.out.println("Prime 1 " + pqList.get(0));
         System.out.println("Prime 2 " + pqList.get(1));
-        System.out.println("Phi " + keyGenerator.generateKey());
+        System.out.println("Phi " + keyGenerator.generatePhi());
     }
 
     private static void testE () {
@@ -44,7 +47,7 @@ public class Tester {
         List<BigInteger> pqList = keyGenerator.generateKeys();
         System.out.println("Prime 1 " + pqList.get(0));
         System.out.println("Prime 2 " + pqList.get(1));
-        BigInteger e = keyGenerator.generateKey();
+        BigInteger e = keyGenerator.generatePhi();
         System.out.println("Phi " + e);
         System.out.println("E " + keyGenerator.generateE(e));
     }
@@ -54,11 +57,46 @@ public class Tester {
         List<BigInteger> pqList = keyGenerator.generateKeys();
         System.out.println("Prime 1 " + pqList.get(0));
         System.out.println("Prime 2 " + pqList.get(1));
-        BigInteger phi = keyGenerator.generateKey();
+        BigInteger phi = keyGenerator.generatePhi();
         System.out.println("Phi " + phi);
         BigInteger e = keyGenerator.generateE(phi);
         System.out.println("E " + e);
         System.out.println("D " + keyGenerator.generateD(phi, e));
     }
 
+    private static void testCommunicator() {
+        KeyGenerator keyGenerator = new KeyGeneratorImpl();
+        Communicator sender = new Communicator(keyGenerator);
+        System.out.println("sender public key: " + sender.getMyPublicKey().get(0) + " " + sender.getMyPublicKey().get(1));
+        System.out.println("sender private key: " + sender.getMyPrivateKey().get(0) + " " + sender.getMyPrivateKey().get(1));
+
+        KeyGenerator keyGenerator2 = new KeyGeneratorImpl();
+        Communicator receiver = new Communicator(keyGenerator2);
+        System.out.println("receiver public key: " + receiver.getMyPublicKey().get(0) + " " + receiver.getMyPublicKey().get(1));
+        System.out.println("receiver private key: " + receiver.getMyPrivateKey().get(0) + " " + receiver.getMyPrivateKey().get(1));
+
+        sender.setupLink(receiver.getMyPublicKey());
+        receiver.setupLink(sender.getMyPublicKey());
+
+        System.out.println("Testing communicator public key and private key: Success ");
+        System.out.println("*****************************************************************************");
+        System.out.println("Testing encoding-Encrypting-Decrypting-decoding sequence ");
+
+        System.out.println("Message: Hello How are you?" );
+        List<BigInteger> encodedMessage = sender.encodeMessage("Hello How are you?");
+        System.out.println("encoded message: " + encodedMessage);
+        List<BigInteger> encryptedMessage = sender.getEncryptedMessage(encodedMessage);
+        System.out.println("Encrypted message: " + encryptedMessage);
+        List<BigInteger> decryptedMessage = receiver.getDecryptedMessage(encryptedMessage);
+        System.out.println("Decrypted message: " + decryptedMessage);
+        System.out.println("decoded message: " + receiver.decodeMessage(decryptedMessage));
+
+        System.out.println("Testing encoding-Encrypting-Decrypting-decoding sequence: Success ");
+        System.out.println("*****************************************************************************");
+        System.out.println("Testing second layer Encrypting-Decrypting sequence: ");
+
+
+
+
+    }
 }

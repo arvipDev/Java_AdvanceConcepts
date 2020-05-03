@@ -15,13 +15,13 @@ public class Communicate {
     private List<BigInteger> encryptedMessage;
 
     public static void main(String[] args) {
-/*        Communicator sender = new Sender();
+/*        Communicator sender = new Communicator();
         Communicator receiver = new Receiver();
-        List<BigInteger> senderPublicKey = ((Sender) sender).getPublicKey();
+        List<BigInteger> senderPublicKey = ((Communicator) sender).getMyPublicKey();
         System.out.println("Comm " + senderPublicKey.get(0));
         System.out.println("Comm " + senderPublicKey.get(1));
 
-        List<BigInteger> receiverPublicKey = ((Receiver) receiver).getPublicKey();
+        List<BigInteger> receiverPublicKey = ((Receiver) receiver).getMyPublicKey();
         System.out.println("Comm " + receiverPublicKey.get(0));
         System.out.println("Comm " + receiverPublicKey.get(1));*/
 
@@ -34,11 +34,11 @@ public class Communicate {
         System.out.println(convert.numbersToString(mess));
         System.out.println("===========================================");*/
 
-/*        Sender sender = new Sender();
+/*        Communicator sender = new Communicator();
 
 
         Encrypt encrypt = Encrypt.getInstance();
-        List<BigInteger> encryptedMessage = encrypt.encrypt("Hello buddy", sender.getPublicKey());
+        List<BigInteger> encryptedMessage = encrypt.encrypt("Hello buddy", sender.getMyPublicKey());
         //for (BigInteger message: encryptedMessage)
             //System.out.println(message);
 

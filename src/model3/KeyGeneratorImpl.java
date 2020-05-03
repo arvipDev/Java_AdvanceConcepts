@@ -6,7 +6,7 @@ import java.util.List;
 
 public class KeyGeneratorImpl implements KeyGenerator {
 
-    private List<BigInteger> pKeys = new ArrayList<>();
+    private List<BigInteger> pKeys;
 
     @Override
     public List<BigInteger> generateKeys() {
@@ -14,7 +14,7 @@ public class KeyGeneratorImpl implements KeyGenerator {
     }
 
     @Override
-    public BigInteger generateKey() {
+    public BigInteger generatePhi() {
         return getPhi();
     }
 
@@ -29,13 +29,16 @@ public class KeyGeneratorImpl implements KeyGenerator {
     }
 
     private List<BigInteger> getKey () {
-        Keys keys = () -> {
-            PrimeGenerator generate = new PrimeGenerator();
-            pKeys = generate.getPrimes(100);
-            // change bound value above
-            return new ArrayList<>(pKeys);
-        };
-        return keys.generateKeys();
+        if (pKeys == null){
+            Keys keys = () -> {
+                PrimeGenerator generate = new PrimeGenerator();
+                pKeys = generate.getPrimes(1000);
+                // change bound value above
+                return new ArrayList<>(pKeys);
+            };
+            return keys.generateKeys();
+        }
+        return pKeys;
     }
 
     private BigInteger getPhi () {
@@ -46,10 +49,10 @@ public class KeyGeneratorImpl implements KeyGenerator {
         return key.getKey();
     }
 
-    private BigInteger getE (BigInteger range) {
+    private BigInteger getE (BigInteger phi) {
         Keys keys = () -> {
             PrimeGenerator generator = new PrimeGenerator();
-            return new ArrayList<>(generator.getPrimes(range.intValue()));
+            return new ArrayList<>(generator.getPrimes(phi.intValue()));
         };
         return keys.generateKeys().get(0);
     }

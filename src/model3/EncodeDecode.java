@@ -11,7 +11,6 @@ public class EncodeDecode {
         for (int i = 0; i < message.length(); i++){
             int convert = message.charAt(i);
             convertedMessage.add(new BigInteger(String.valueOf(convert)));
-            System.out.println("Converting " + convertedMessage.get(i));
         }
         return convertedMessage;
     }

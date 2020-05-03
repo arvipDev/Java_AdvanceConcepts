@@ -25,7 +25,7 @@ public class PublicKeyGenerator extends KeyGenerator {
         System.out.println("App pk " + primes.get(0));
         System.out.println("App pk " + primes.get(1));
         return primes;
-                //Sender.getPublicKey();
+                //Communicator.getMyPublicKey();
     }
 
 }
